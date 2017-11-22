@@ -1,0 +1,6 @@
+django_postgres_schema.egg-info/
+__pycache__/
+.idea
+.coverage
+.tox
+dist
