@@ -3,12 +3,11 @@ dist: trusty
 language: python
 
 python:
-  - "3.5"
-  - "3.6"
+  - "3.6.8"
+  - "3.7.2"
 
 env:
-  - DJANGO="1.11"
-  - DJANGO="2.0"
+  - DJANGO="2.2"
 
 services:
   - postgresql

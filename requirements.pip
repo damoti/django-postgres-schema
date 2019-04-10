@@ -1,2 +1,2 @@
-django==2.0rc1
-psycopg2
+django
+psycopg2-binary

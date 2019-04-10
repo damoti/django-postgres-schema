@@ -14,7 +14,7 @@ long_description = '\n\n'.join((
 
 setup(
     name='django-postgres-schema',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/damoti/django-postgres-schema',
     license='BSD',
     description='Postgres schemas in Django.',
