@@ -17,6 +17,6 @@ class Migration(migrations.Migration):
     dependencies = []
 
     operations = [
-        #migrations.RunSQL(sql=CLONE_SCHEMA, reverse_sql='DROP FUNCTION clone_schema(text, text)'),
-        #migrations.RunSQL(sql='CREATE SCHEMA __template__', reverse_sql='DROP SCHEMA __template__ CASCADE'),
+        migrations.RunSQL(sql=CLONE_SCHEMA, reverse_sql='DROP FUNCTION clone_schema(text, text)'),
+        migrations.RunSQL(sql='CREATE SCHEMA __template__', reverse_sql='DROP SCHEMA __template__ CASCADE'),
     ]
