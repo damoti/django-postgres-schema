@@ -6,7 +6,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'postgres_schema.engine',
         'NAME': 'postgres_schema',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'USER': 'postgres',
         'TEST': {
             'SERIALIZE': False
