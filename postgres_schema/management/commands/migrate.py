@@ -33,13 +33,13 @@ class Command(MigrateCommand):
 
             def model_installed(model):
                 opts = model._meta
-                converter = connection.introspection.table_name_converter
-                # Note that if a model is unmanaged we short-circuit and never try to install it
+                converter = connection.introspection.identifier_converter
+
+                # Note that if a model isn't managed we short-circuit and never try to install it
                 return not (
                     (converter(opts.db_table) in tables) or
                     (opts.auto_created and converter(opts.auto_created._meta.db_table) in tables)
                 )
-
             manifest = OrderedDict(
                 (app_name, list(filter(model_installed, model_list)))
                 for app_name, model_list in all_models
